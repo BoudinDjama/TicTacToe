@@ -1,0 +1,551 @@
+<title>Project4</title>
+</head>
+
+
+<script>
+
+
+ var compt=3;
+ var t=0;
+ var case1=0;
+ var case2=0;
+ var case3=0;
+ var case4=0;
+ var case5=0;
+ var case6=0;
+ var case7=0;
+ var case8=0;
+ var case9=0;
+ var r1=0;
+ var r2=0;
+ var r3=0;
+ var r4=0;
+ var r5=0;
+ var r6=0;
+ var r7=0;
+ var r8=0;
+ var r9=0;
+ 
+
+
+
+ var xw=0;
+ var ow=0;
+
+function essai(p){
+
+if(t<1){
+if(p==1 && r1<1){
+
+if(Math.abs(compt % 2) == 1){
+document.getElementById('tic1').src="cellule_x.jpg";
+document.getElementById('Tour').innerHTML="Tour de O";
+case1=1;
+
+}
+
+if(Math.abs(compt % 2) == 0){
+document.getElementById('tic1').src="cellule_o.jpg";
+document.getElementById('Tour').innerHMTL="Tour de X";
+case1=2;
+}
+r1++;
+compt++;
+
+
+
+
+}
+
+
+
+if(p==2 && r2<1){
+
+if(Math.abs(compt % 2) == 1){
+document.getElementById('tic2').src="cellule_x.jpg";
+document.getElementById('Tour').innerHTML="Tour de O";
+case2=1;
+
+}
+
+if(Math.abs(compt % 2) == 0){
+document.getElementById('tic2').src="cellule_o.jpg";
+document.getElementById('Tour').innerHTML="Tour de X";
+case2=2;
+
+}
+r2++;
+
+compt++;
+
+
+
+}
+
+if(p==3 && r3<1){
+
+if(Math.abs(compt % 2) == 1){
+document.getElementById('tic3').src="cellule_x.jpg";
+document.getElementById('Tour').innerHTML="Tour de O";
+case3=1;
+}
+
+if(Math.abs(compt % 2) == 0){
+document.getElementById('tic3').src="cellule_o.jpg";
+document.getElementById('Tour').innerHTML="Tour de X";
+case3=2;
+
+}
+compt++;
+r3++;
+}
+
+if(p==4 && r4<1){
+
+if(Math.abs(compt % 2) == 1){
+document.getElementById('tic4').src="cellule_x.jpg";
+document.getElementById('Tour').innerHTML="Tour de O";
+case4=1;
+}
+
+if(Math.abs(compt % 2) == 0){
+document.getElementById('tic4').src="cellule_o.jpg";
+document.getElementById('Tour').innerHTML="Tour de X";
+case4=2;
+
+}
+r4++;
+compt++;
+
+}
+
+
+if(p==5 && r5<1){
+
+if(Math.abs(compt % 2) == 1){
+document.getElementById('tic5').src="cellule_x.jpg";
+document.getElementById('Tour').innerHTML="Tour de O";
+case5=1;
+}
+
+if(Math.abs(compt % 2) == 0){
+document.getElementById('tic5').src="cellule_o.jpg";
+document.getElementById('Tour').innerHTML="Tour de X";
+case5=2;
+}
+r5++;
+compt++;
+
+}
+
+if(p==6 && r6<1){
+
+if(Math.abs(compt % 2) == 1){
+document.getElementById('tic6').src="cellule_x.jpg";
+document.getElementById('Tour').innerHTML="Tour de O";
+case6=1;
+}
+
+if(Math.abs(compt % 2) == 0){
+document.getElementById('tic6').src="cellule_o.jpg";
+document.getElementById('Tour').innerHTML="Tour de X";
+case6=2;
+}
+r6++;
+compt++;
+
+}
+
+
+if(p==7 && r7<1){
+
+if(Math.abs(compt % 2) == 1){
+document.getElementById('tic7').src="cellule_x.jpg";
+document.getElementById('Tour').innerHTML="Tour de O";
+case7=1;
+}
+
+if(Math.abs(compt % 2) == 0){
+document.getElementById('tic7').src="cellule_o.jpg";
+document.getElementById('Tour').innerHTML="Tour de X";
+case7=2;
+}
+r7++;
+compt++;
+
+}
+
+
+if(p==8 && r8<1){
+
+if(Math.abs(compt % 2) == 1){
+document.getElementById('tic8').src="cellule_x.jpg";
+document.getElementById('Tour').innerHTML="Tour de O";
+case8=1;
+}
+
+if(Math.abs(compt % 2) == 0){
+document.getElementById('tic8').src="cellule_o.jpg";
+document.getElementById('Tour').innerHTML="Tour de X";
+case8=2;
+}
+r8++;
+compt++;
+
+}
+
+
+if(p==9 && r9<1){
+
+if(Math.abs(compt % 2) == 1){
+document.getElementById('tic9').src="cellule_x.jpg";
+document.getElementById('Tour').innerHTML="Tour de O";
+case9=1;
+}
+
+if(Math.abs(compt % 2) == 0){
+document.getElementById('tic9').src="cellule_o.jpg";
+document.getElementById('Tour').innerHTML="Tour de X";
+case9=2;
+}
+r9++;
+compt++;
+
+}
+
+
+if(case1==case2 && case2==case3 && case1==2){
+document.getElementById('Tour').innerHTML="O a gagné!";
+ document.getElementById('tic1').style["border"]="solid 15px";
+ document.getElementById('tic2').style["border"]="solid 15px";
+ document.getElementById('tic3').style["border"]="solid 15px";
+ 
+ 
+ow++;
+t++;
+}
+
+if(case5==case6 && case6==case4 && case4==2){
+document.getElementById('Tour').innerHTML="O a gagné!";
+ document.getElementById('tic4').style["border"]="solid 15px";
+ document.getElementById('tic5').style["border"]="solid 15px";
+ document.getElementById('tic6').style["border"]="solid 15px";
+ 
+ow++;
+t++;
+}
+
+if(case7==case8 && case8==case9 && case7==2){
+document.getElementById('Tour').innerHTML="O a gagné!";
+ document.getElementById('tic7').style["border"]="solid 15px";
+ document.getElementById('tic8').style["border"]="solid 15px";
+ document.getElementById('tic9').style["border"]="solid 15px";
+ 
+ow++;
+t++;
+}
+
+if(case1==case4 && case4==case7 && case4==2){
+document.getElementById('Tour').innerHTML="O a gagné!";
+ document.getElementById('tic1').style["border"]="solid 15px";
+ document.getElementById('tic4').style["border"]="solid 15px";
+ document.getElementById('tic7').style["border"]="solid 15px";
+ 
+ow++;
+t++;
+}
+
+if(case2==case5 && case5==case8 && case2==2){
+document.getElementById('Tour').innerHTML="O a gagné!";
+ document.getElementById('tic2').style["border"]="solid 15px";
+ document.getElementById('tic5').style["border"]="solid 15px";
+ document.getElementById('tic8').style["border"]="solid 15px";
+ 
+ow++;
+t++;
+}
+
+if(case3==case6 && case6==case9 && case6==2){
+document.getElementById('Tour').innerHTML="O a gagné!";
+ document.getElementById('tic3').style["border"]="solid 15px";
+ document.getElementById('tic6').style["border"]="solid 15px";
+ document.getElementById('tic9').style["border"]="solid 15px";
+ 
+ow++;
+t++;
+}
+
+if(case1==case5 && case5==case9 && case1==2){
+document.getElementById('Tour').innerHTML="O a gagné!";
+ document.getElementById('tic1').style["border"]="solid 15px";
+ document.getElementById('tic5').style["border"]="solid 15px";
+ document.getElementById('tic9').style["border"]="solid 15px";
+ 
+ow++;
+t++;
+}
+if(case3==case5 && case5==case7 && case3==2){
+document.getElementById('Tour').innerHTML="O a gagné!";
+ document.getElementById('tic3').style["border"]="solid 15px";
+ document.getElementById('tic5').style["border"]="solid 15px";
+ document.getElementById('tic7').style["border"]="solid 15px";
+ 
+ow++;
+t++;
+}
+
+
+
+
+
+
+if(case1==case2 && case2==case3 && case1==1){
+document.getElementById('Tour').innerHTML="X a gagné!";
+ document.getElementById('tic1').style["border"]="solid 15px";
+ document.getElementById('tic2').style["border"]="solid 15px";
+ document.getElementById('tic3').style["border"]="solid 15px";
+ 
+xw++;
+t++;
+}
+
+if(case5==case6 && case6==case4 && case4==1){
+document.getElementById('Tour').innerHTML="X a gagné!";
+ document.getElementById('tic4').style["border"]="solid 15px";
+ document.getElementById('tic5').style["border"]="solid 15px";
+ document.getElementById('tic6').style["border"]="solid 15px";
+ 
+xw++;
+t++;
+}
+
+if(case7==case8 && case8==case9 && case7==1){
+document.getElementById('Tour').innerHTML="X a gagné!";
+ document.getElementById('tic7').style["border"]="solid 15px";
+ document.getElementById('tic8').style["border"]="solid 15px";
+ document.getElementById('tic9').style["border"]="solid 15px";
+ 
+xw++;
+t++;
+}
+
+if(case1==case4 && case4==case7 && case4==1){
+document.getElementById('Tour').innerHTML="X a gagné!";
+ document.getElementById('tic1').style["border"]="solid 15px";
+ document.getElementById('tic4').style["border"]="solid 15px";
+ document.getElementById('tic7').style["border"]="solid 15px";
+ 
+xw++;
+t++;
+}
+
+if(case2==case5 && case5==case8 && case2==1){
+document.getElementById('Tour').innerHTML="X a gagné!";
+ document.getElementById('tic2').style["border"]="solid 15px";
+ document.getElementById('tic5').style["border"]="solid 15px";
+ document.getElementById('tic8').style["border"]="solid 15px";
+ 
+xw++;
+t++;
+}
+
+if(case3==case6 && case6==case9 && case6==1){
+document.getElementById('Tour').innerHTML="X a gagné!";
+ document.getElementById('tic3').style["border"]="solid 15px";
+ document.getElementById('tic6').style["border"]="solid 15px";
+ document.getElementById('tic9').style["border"]="solid 15px";
+ 
+xw++;
+t++;
+}
+
+if(case5==case6 && case6==case4 && case4==1){
+document.getElementById('Tour').innerHTML="X a gagné!";
+ document.getElementById('tic4').style["border"]="solid 15px";
+ document.getElementById('tic5').style["border"]="solid 15px";
+ document.getElementById('tic6').style["border"]="solid 15px";
+ 
+xw++;
+t++;
+}
+
+if(case1==case5 && case5==case9 && case1==1){
+document.getElementById('Tour').innerHTML="X a gagné!";
+ document.getElementById('tic1').style["border"]="solid 15px";
+ document.getElementById('tic5').style["border"]="solid 15px";
+ document.getElementById('tic9').style["border"]="solid 15px";
+ 
+xw++;
+t++;
+}
+if(case3==case5 && case5==case7 && case3==1){
+document.getElementById('Tour').innerHTML="X a gagné!";
+ document.getElementById('tic3').style["border"]="solid 15px";
+ document.getElementById('tic5').style["border"]="solid 15px";
+ document.getElementById('tic7').style["border"]="solid 15px";
+ 
+xw++;
+t++;
+}
+document.getElementById('score').innerHTML=" X :"+xw+" / O :"+ow;
+
+}
+}
+
+function reset(){
+
+ document.getElementById('tic1').style["border"]="";
+ document.getElementById('tic1').style["border"]="";
+ document.getElementById('tic2').style["border"]="";
+ document.getElementById('tic3').style["border"]="";
+ document.getElementById('tic4').style["border"]="";
+ document.getElementById('tic5').style["border"]="";
+ document.getElementById('tic6').style["border"]="";
+ document.getElementById('tic7').style["border"]="";
+ document.getElementById('tic8').style["border"]="";
+ document.getElementById('tic9').style["border"]="";
+ 
+
+
+
+ document.getElementById('tic1').src="cellule_vide.jpg";
+ document.getElementById('tic2').src="cellule_vide.jpg";
+ document.getElementById('tic3').src="cellule_vide.jpg";
+ document.getElementById('tic4').src="cellule_vide.jpg";
+ document.getElementById('tic5').src="cellule_vide.jpg";
+ document.getElementById('tic6').src="cellule_vide.jpg";
+ document.getElementById('tic7').src="cellule_vide.jpg";
+ document.getElementById('tic8').src="cellule_vide.jpg";
+ document.getElementById('tic9').src="cellule_vide.jpg";
+ document.getElementById('tic1').style["border-right"]="solid ";
+ document.getElementById('tic1').style["border-bottom"]="solid ";
+ document.getElementById('tic2').style["border-right"]="solid ";
+ document.getElementById('tic2').style["border-bottom"]="solid ";
+ document.getElementById('tic3').style["border-bottom"]="solid ";
+ document.getElementById('tic4').style["border-right"]="solid ";
+ document.getElementById('tic4').style["border-bottom"]="solid ";
+ document.getElementById('tic5').style["border-right"]="solid ";
+ document.getElementById('tic5').style["border-bottom"]="solid ";
+ document.getElementById('tic6').style["border-bottom"]="solid ";
+ document.getElementById('tic7').style["border-rigth"]="solid ";
+ document.getElementById('tic8').style["border-rigth"]="solid ";
+ 
+ t=0;
+ compt=3;
+ case1=3;
+ case2=4;
+ case3=5;
+ case4=6;
+ case5=7;
+ case6=8;
+ case7=9;
+ case8=10;
+ case9=11;
+  r1=0;
+  r2=0;
+  r3=0;
+  r4=0;
+  r5=0;
+  r6=0;
+  r7=0;
+  r8=0;
+  r9=0;
+ 
+
+ document.getElementById('Tour').innerHTML=" X Commence";
+
+}
+
+
+</script>
+
+
+<style>
+.tic{
+width:160px;
+margin-right: 10px;
+margin-left: 10px;
+cursor: pointer;
+
+}
+
+#tic1{
+border-right:solid;
+border-bottom:solid;
+}
+#tic4{
+border-right:solid;
+border-bottom:solid;
+}
+
+#tic7{
+border-right:solid;
+}
+
+#tic2{
+border-right:solid;
+border-bottom:solid;
+}
+
+#tic5{
+border-right:solid;
+border-bottom:solid;
+}
+
+#tic8{
+border-right:solid;
+}
+
+#tic3{
+
+border-bottom:solid;
+}
+
+#tic6{
+border-bottom:solid;
+}
+
+#Tour{
+font-size: 30px;
+font-weight: bold;
+Text-align:center;
+}
+
+#reset{
+color:green;
+Text-align:center;
+}
+
+#score{
+font-size: 20px;
+
+
+}
+
+</style>
+
+
+
+
+<body>
+
+<p><img id='tic1' class='tic' src='cellule_vide.jpg' onClick="essai(1)">
+<img id='tic2' class='tic' src='cellule_vide.jpg' onClick="essai(2)">
+<img id='tic3' class='tic' src='cellule_vide.jpg' onClick="essai(3)"></p>
+<img id='tic4' class='tic' src='cellule_vide.jpg' onClick="essai(4)">
+<img id='tic5' class='tic' src='cellule_vide.jpg' onClick="essai(5)">
+<img id='tic6' class='tic' src='cellule_vide.jpg' onClick="essai(6)">
+<p><img id='tic7' class='tic' src='cellule_vide.jpg' onClick="essai(7)">
+<img id='tic8' class='tic' src='cellule_vide.jpg' onClick="essai(8)">
+<img id='tic9' class='tic' src='cellule_vide.jpg' onClick="essai(9)"></p>
+
+<p id='Tour'>X Commence</p>
+
+<p id='score'> X :0 / O :0</p>
+
+<p><button onClick='reset()' id='reset'>recommancer</button></p>
+</body>
+
+
+
+</html>
